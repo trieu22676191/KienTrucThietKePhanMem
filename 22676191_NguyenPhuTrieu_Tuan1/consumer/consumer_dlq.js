@@ -45,11 +45,11 @@ async function connectWithRetry() {
                     channel.nack(msg, false, false);
                 }
             },
-            { noAck: true}
+            { noAck: false}
         );
     } catch (err) {
         console.log("Failed");
-        setTimeout(connectWithRetry, 5000);
+        setTimeout(connectWithRetry, 3000);
     }
 }
 
