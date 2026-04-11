@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  redis:
+    image: redis:alpine
+    container_name: redis_b15
+    ports:
+      - "6379:6379"
+    deploy:
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 256M
+        reservations:
+          cpus: '0.25'
+          memory: 128M

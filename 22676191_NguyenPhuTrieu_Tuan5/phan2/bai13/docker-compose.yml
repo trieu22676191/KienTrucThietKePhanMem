@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  react-nginx:
+    image: nginx:alpine
+    container_name: react_nginx_b13
+    ports:
+      - "80:80"
+    volumes:
+      - ./html:/usr/share/nginx/html

@@ -1,0 +1,19 @@
+version: '3.8'
+services:
+  container1:
+    image: alpine
+    container_name: cont1_b14
+    command: sleep infinity
+    networks:
+      - my_private_network
+
+  container2:
+    image: alpine
+    container_name: cont2_b14
+    command: sleep infinity
+    networks:
+      - my_private_network
+
+networks:
+  my_private_network:
+    driver: bridge
