@@ -1,0 +1,5 @@
+com\flashsale\auth\AuthApplication.class
+com\flashsale\auth\config\CorsConfig$1.class
+com\flashsale\auth\controller\AuthController.class
+com\flashsale\auth\model\User.class
+com\flashsale\auth\config\CorsConfig.class
