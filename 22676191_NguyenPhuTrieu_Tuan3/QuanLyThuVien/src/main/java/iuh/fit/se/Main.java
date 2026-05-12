@@ -55,7 +55,7 @@ public class Main {
 
                 System.out.println("\n=== 2. STRATEGY PATTERN ===");
                 System.out.println("Demonstrating different search strategies:\n");
-                
+
                 library.setSearchStrategy(new SearchByTitle());
                 System.out.println("Search by title 'Clean':");
                 library.searchBooks("Clean")
