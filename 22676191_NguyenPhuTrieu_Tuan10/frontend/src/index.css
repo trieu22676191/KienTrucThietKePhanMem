@@ -1,0 +1,43 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background: linear-gradient(135deg, #fff5f0 0%, #ffe8d6 100%);
+  min-height: 100vh;
+  color: #2d2d2d;
+}
+#root { max-width: 960px; margin: 0 auto; padding: 24px; }
+header {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-bottom: 24px; padding-bottom: 16px; border-bottom: 2px solid #ff6b35;
+}
+h1 { color: #ff6b35; font-size: 1.5rem; }
+.card {
+  background: white; border-radius: 12px; padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08); margin-bottom: 16px;
+}
+input, button {
+  padding: 10px 14px; border-radius: 8px; border: 1px solid #ddd;
+  font-size: 14px; margin: 4px 0;
+}
+button {
+  background: #ff6b35; color: white; border: none; cursor: pointer;
+  font-weight: 600;
+}
+button:hover { background: #e55a2b; }
+button.secondary { background: #6c757d; }
+.food-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px; }
+.food-item {
+  border: 1px solid #eee; border-radius: 10px; padding: 12px; text-align: center;
+}
+.food-item img { width: 100%; height: 120px; object-fit: cover; border-radius: 8px; }
+.price { color: #ff6b35; font-weight: bold; margin: 8px 0; }
+.tabs { display: flex; gap: 8px; margin-bottom: 16px; }
+.tabs button { flex: 1; }
+.tabs button.active { background: #ff6b35; }
+.status { font-size: 12px; padding: 4px 8px; border-radius: 4px; display: inline-block; }
+.status.PENDING_PAYMENT { background: #fff3cd; }
+.status.PAID { background: #d4edda; }
+.status.PAYMENT_FAILED { background: #f8d7da; }
+.alert { padding: 12px; border-radius: 8px; margin-bottom: 12px; }
+.alert.info { background: #d1ecf1; }
+.alert.error { background: #f8d7da; }
